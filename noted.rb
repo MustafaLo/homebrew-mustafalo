@@ -5,20 +5,20 @@
 class Noted < Formula
   desc ""
   homepage "https://github.com/MustafaLo/noted"
-  version "1.0.1"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/MustafaLo/noted/releases/download/v1.0.1/noted_1.0.1_darwin_amd64.tar.gz"
-      sha256 "21d90eed114bb0ba7001be1d7d3834193c213cf2933345464b77f543b89341a9"
+      url "https://github.com/MustafaLo/noted/releases/download/v1.0.0/noted_1.0.0_darwin_amd64.tar.gz"
+      sha256 "dcbbe531c71248733d57a37a88434e0b44c211fe8065077dd27fc54057150946"
 
       def install
         bin.install "noted"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/MustafaLo/noted/releases/download/v1.0.1/noted_1.0.1_darwin_arm64.tar.gz"
-      sha256 "e0fd72ddaa8d509a824ed6915b6d25d60a923d2170d09837818cfd2a2e41abe5"
+      url "https://github.com/MustafaLo/noted/releases/download/v1.0.0/noted_1.0.0_darwin_arm64.tar.gz"
+      sha256 "1ae3f171cc16c130f983ef1137e2f5de904bfb36fee9abee9cec04ab4bb92084"
 
       def install
         bin.install "noted"
@@ -29,8 +29,8 @@ class Noted < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MustafaLo/noted/releases/download/v1.0.1/noted_1.0.1_linux_amd64.tar.gz"
-        sha256 "1d13086fa6a2ab5ad1df4b845e5c77611b64afbd527df8b430238be008816425"
+        url "https://github.com/MustafaLo/noted/releases/download/v1.0.0/noted_1.0.0_linux_amd64.tar.gz"
+        sha256 "35d2f070d1ecb5715ee104a5da13cacdb81345cc311d72c085395386a28e347b"
 
         def install
           bin.install "noted"
@@ -39,8 +39,8 @@ class Noted < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/MustafaLo/noted/releases/download/v1.0.1/noted_1.0.1_linux_arm64.tar.gz"
-        sha256 "18f84df9e0bb0d5857ed41a8bea33216567c10005ab848ec9db229d75f8909f4"
+        url "https://github.com/MustafaLo/noted/releases/download/v1.0.0/noted_1.0.0_linux_arm64.tar.gz"
+        sha256 "66a181b2e8ff52a7908a1139a74398d562c4d71d4281f9e8c4d6a464c5e4b845"
 
         def install
           bin.install "noted"
